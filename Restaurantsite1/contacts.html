@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meera's Contact</title>
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center; color:red">Meera's Kitchen</h1>
+    </header>
+    <hr>
+    <nav class="navcontainer">
+        <ul>
+            <li><a href="index.html" style="display:block; color:rgb(241, 85, 85)">Home</a></li>
+            <li><a href="#"  style="display:block ; color:rgb(241, 99, 99)">Menu</a></li>
+            <li><a href="#" style="display:block; color:rgb(243, 89, 89)">Contact Us</a></li>
+         </ul>
+         <hr/>
+    </nav>
+    <form action="submit.html" method="POST" style="text-align:center">
+        <label for="firstName">Name:</label> <br>
+        <input type="text" id="firstName" name="firstName"> <br>
+        <label for="lastName">Email:</label><br>
+        <input type="text" id="lastName" name="lastName"> <br>
+        <label for="phone">Phone:</label><br>
+        <input type="text" id="phone" name="phone"> <br>
+        <label for="contact">Reason for Inquiry:</label><br>
+        <select id="contact" name="contact">
+            <option value="default" selected>--Catering--</option>
+            <option>Private Party</option>
+            <option >Feedback</option>
+            <option >Other</option>
+        </select><br>
+        <label for="info">Additional Information</label><br>
+        <textarea id="info" name="info"></textarea><br><br>
+        <legend>Have you been to restaurant?</legend><br>
+        <input type="radio" >
+        <label for="choice1">Yes</label>
+        <input type="radio" >
+        <label for="choice2" value="default">No</label><br>
+   
+       
+        <legend>Best Days to contact you:</legend>
+        <br>
+                 <input type="checkbox" >
+                 <label for="frontEnd">M</label>
+                 <input type="checkbox" >
+                 <label for="backEnd">T</label>
+                 <input type="checkbox" >
+                 <label for="database">W</label>
+                 <input type="checkbox" >
+                 <label for="frontEnd">Th</label>
+                 <input type="checkbox" >
+                 <label for="backEnd">F</label><br>
+               
+       
+                 <br>
+         
+        
+        <input type="submit" name="submit" value="Send Request">
+    </form>
+    <hr>
+                 <footer style="text-align:center">
+                    <p>123 Street, Hoboken, New Jersey, 07310</p>
+                    <p>929-929-9999</p>
+                    <hr>
+                 </footer>
+</body>
+</html>
