@@ -1,40 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!--
+<!--
 Name: Pranay Sankineni
 Date Created: 01/24/2022
 Most recent revision:
 -->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pranay's Portfolio</title>
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <style>
+       
+
+        caption {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 8px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #0d1f2d;
+            border-collapse: collapse;
+            padding: 5px 10px;
+
+        }
+
+        table {
+            width: 90%;
+            margin: auto;
+        }
+
+        tr {
+            height: 30px;
+        }
+
+        th {
+            background-color: #546a7b;
+            color: #f2eded;
+
+        }
+
+        tr:nth-child(even) {
+            background-color: #e4c3ad;
+        }
+    </style>
 </head>
+
 <body>
     <header>
-    <h1>Pranay's Portfolio</h1>
+        <h1>Pranay's Portfolio</h1>
     </header>
-    <nav> <!-- The nav element will include navigation buttons or links -->
-        <hr />
+    <nav>
+        <!-- The nav element will include navigation buttons or links -->
+        
         <!-- We need to add links to projects.html, contact.html, and testimonials.html -->
         <p><a href="projects.html">Projects</a></p>
         <p><a href="contact.html">Contact Me</a></p>
         <p><a href="testimonials.html">Testimonials</a></p>
-        <hr />
+        
     </nav>
 
     <section>
-        <article id="about-me">
+        <article id="about" class="border">
             <h2><em>About me</em></h2>
             <img src="images/img1.jpg" alt="Portrait of Pranay Sankineni" style=" width: 200px; height:250px">
-            <p>Hello! My name is Pranay and I am a software developer with a Master's degree in Computer Science at <strong> College,NY</strong> . My coding languages of choice are Javascript and Ruby. I also have experiences with React, SQL. 
+            <p>Hello! My name is Pranay and I am a software developer with a Master's degree in Computer Science at
+                <strong> College,NY</strong> . My coding languages of choice are Javascript and Ruby. I also have
+                experiences with React, SQL.
             </p>
-            <p>I'm passionate about creating quality products that meet all of the customer needs and I love learning new techniques and technologies that allow me to make it happen. 
+            <p>I'm passionate about creating quality products that meet all of the customer needs and I love learning
+                new techniques and technologies that allow me to make it happen.
             </p>
         </article>
-    
-        <article id="past-experiences">
+
+        <article id="experiences">
             <h2><em>Past Experiences</em></h2>
             <img src="images/img2.jpg" alt="Website" style=" width: 350px; height:300px">
             <!-- <p>
@@ -45,22 +89,22 @@ Most recent revision:
                 I decided to become Full-stack developer, so I started learning <strong>, Rails and PostgreSQL</strong>. I Developed web application using Ruby on Rails as backend, PostgreSQL as the database HTML, CSS, JavaScript, React for the frontend of the application. Used Visual Studio as IDE. This app is intended to be a simple example of a CRUD app. User Matching - Unique users can click through a list of colleges and can read reviews, ratings. User can add new review and delete the review.
                 
             </p> -->
-            <table> 
-                <caption>Employment History</caption> 
-                <tr> 
-                    <th>Years of Employment</th> 
-                    <th>Title</th> 
-                    <th>Company</th> 
-                </tr> 
-                <tr> 
-                    <td>2020-Present</td> 
-                    <td>Software Developer</td> 
-                    <td>Freelancer,NJ</td> 
-                </tr> 
-                <tr> 
-                    <td>2019-2020</td> 
-                    <td>Developer</td> 
-                    <td>Freelancer</td> 
+            <table>
+                <caption>Employment History</caption>
+                <tr>
+                    <th>Years of Employment</th>
+                    <th>Title</th>
+                    <th>Company</th>
+                </tr>
+                <tr>
+                    <td>2020-Present</td>
+                    <td>Software Developer</td>
+                    <td>Freelancer,NJ</td>
+                </tr>
+                <tr>
+                    <td>2019-2020</td>
+                    <td>Developer</td>
+                    <td>Freelancer</td>
                 </tr>
                 <tr>
                     <td>2016-2019</td>
@@ -70,7 +114,7 @@ Most recent revision:
             </table>
 
         </article>
-    
+
         <article id="hobbies">
             <h2><em>Hobbies</em></h2>
             <img src="images/img3.jpeg" alt="Hobbies" style=" width: 150px; height:200px">
@@ -89,28 +133,29 @@ Most recent revision:
                 </ol>
             </ul>
             <ul>
-                    <li>Sports</li>
-                    <ul>
-                        <li>Cricket</li>
-                        <li>Basketball</li>
-                        <li>Vollyball</li>
-                    </ul>
-                    <li>Outdoor Activities</li>
-                    <ul>
-                        <li>Fishing</li>
-                        <li>Driving</li>
-                        <li>Walking</li>
-                    </ul>
-                
+                <li>Sports</li>
+                <ul>
+                    <li>Cricket</li>
+                    <li>Basketball</li>
+                    <li>Vollyball</li>
+                </ul>
+                <li>Outdoor Activities</li>
+                <ul>
+                    <li>Fishing</li>
+                    <li>Driving</li>
+                    <li>Walking</li>
+                </ul>
+
             </ul>
-        
+
 
             <!-- <p>Other than coding, I like cooking, playing board games and going on long rides.</p> -->
         </article>
     </section>
     <footer>
-        <hr/>
+       
         <p>&copy; 2022 Pranay Sankineni. All rights reserved.</p>
     </footer>
 </body>
+
 </html>
